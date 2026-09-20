@@ -1,0 +1,36 @@
+{
+  "title": "Synthetic validation example",
+  "meter": [2, 4],
+  "voices": [
+    {
+      "id": "part-1", "tonic": "C4", "pitch_basis": "written", "monophonic": true,
+      "measures": [
+        {"id": "1", "events": [
+          {"id": "a1", "kind": "note", "duration": "1/2", "pitches": ["C5"], "jianpu": [{"degree": 1, "octave": 1}]},
+          {"id": "a2", "kind": "note", "duration": "1/2", "pitches": ["D5"]},
+          {"id": "a3", "kind": "note", "duration": "1", "pitches": ["E5"]}
+        ]},
+        {"id": "2", "events": [
+          {"id": "a4", "kind": "note", "duration": "1/2", "pitches": ["E5"]},
+          {"id": "a5", "kind": "rest", "duration": "1/2"},
+          {"id": "a6", "kind": "note", "duration": "1", "pitches": ["D5"]}
+        ]}
+      ]
+    },
+    {
+      "id": "part-2", "tonic": "C4", "pitch_basis": "written", "monophonic": true,
+      "measures": [
+        {"id": "1", "events": [
+          {"id": "b1", "kind": "note", "duration": "1", "pitches": ["C4"]},
+          {"id": "b2", "kind": "rest", "duration": "1"}
+        ]},
+        {"id": "2", "events": [
+          {"id": "b3", "kind": "rest", "duration": "1/2"},
+          {"id": "b4", "kind": "note", "duration": "1/2", "pitches": ["G3"], "jianpu": [{"degree": 5, "octave": -1}]},
+          {"id": "b5", "kind": "note", "duration": "1", "pitches": ["C4"]}
+        ]}
+      ]
+    }
+  ],
+  "connections": [{"kind": "tie", "start": "a3", "end": "a4"}]
+}

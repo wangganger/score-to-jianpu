@@ -1,0 +1,4 @@
+interface:
+  display_name: "五线谱转简谱与分声部校对"
+  short_description: "逐音核对五线谱转简谱，正确处理独立声部、休止、连线和A4打印排版"
+  default_prompt: "请用 $score-to-jianpu 将这些谱子转成简谱，逐音核对并按独立声部排成 A4 竖版；不确定处单独标注。"
